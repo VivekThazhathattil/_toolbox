@@ -125,6 +125,7 @@ def main():
     
     # Alternatively, you can specify an explicit output file:
     # OUTPUT_FILE = '/path/to/output/pTE_om_z_2d_to_v_2d_dsmpl_3x_max_values_and_delays.h5'
+    OUTPUT_DIR = '/scratch/asevivek/vivek_cases/000_datasets/000/_toolbox_outputs/information_theory/permutation_related/max_permutation_transfer_entropy_computations/single_cylinder_Re7k_with_PGS_with_inflow_turb'
     
     # Run the processing
     max_values, max_delays = find_max_across_delays_single_file(

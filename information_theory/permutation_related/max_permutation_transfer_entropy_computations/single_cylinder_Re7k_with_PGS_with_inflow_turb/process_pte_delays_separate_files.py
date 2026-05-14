@@ -131,8 +131,8 @@ def main():
     
     # Configuration parameters - MODIFY THESE
     INPUT_DIR = '/scratch/asevivek/vivek_cases/000_datasets/000/_toolbox_outputs/information_theory/permutation_related/permutation_transfer_entropy_computations/single_cylinder_Re7k_with_PGS_with_inflow_turb'
-    FILE_PREFIX = 'pTE_om_z_2d_to_v_2d_dsmpl_3x'
-    #FILE_PREFIX = 'pTE_v_2d_to_om_z_2d_dsmpl_3x'
+    #FILE_PREFIX = 'pTE_om_z_2d_to_v_2d_dsmpl_3x'
+    FILE_PREFIX = 'pTE_v_2d_to_om_z_2d__dsmpl_3x'
     DATASET_NAME = 'ds'
     #OUTPUT_DIR = INPUT_DIR  # Save outputs in the same directory
     OUTPUT_DIR = '/scratch/asevivek/vivek_cases/000_datasets/000/_toolbox_outputs/information_theory/permutation_related/max_permutation_transfer_entropy_computations/single_cylinder_Re7k_with_PGS_with_inflow_turb'

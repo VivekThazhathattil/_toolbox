@@ -6,7 +6,10 @@ DSET_PATH="/ds"
 JAR_PATH="/work/home/vivek/000_datasets/infodynamics.jar"
 OUT_DIR="/work/home/vivek/000_datasets/000/_toolbox_outputs/information_theory/permutation_related/permutation_transfer_entropy_computations/single_cylinder_Re7k_with_PGS_with_inflow_turb_lustre/om_z_2d_to_om_z_2d"
 
-mpirun -np 48 --mca btl_openib_allow_ib true -machinefile $PBS_NODEFILE --oversubscribe vInfoFlow-mpi \
+mpirun -np 120 \
+  --mca btl_openib_ib_timeout 60 \
+  --mca btl_openib_ib_retry_count 50 \
+  --mca btl_openib_allow_ib true -machinefile $PBS_NODEFILE --oversubscribe vInfoFlow-mpi \
   --jar-path ${JAR_PATH} \
   --file-path ${FILE_PATH} \
   --dset-path ${DSET_PATH} \
